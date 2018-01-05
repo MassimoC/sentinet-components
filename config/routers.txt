@@ -1,0 +1,15 @@
+ContextPropertyRouter
+Canopus.Sentinet.Routers,Version=1.0.0.0,Culture=neutral,PublicKeyToken=null
+Canopus.Sentinet.Routers.Context.ContextPropertyRouter
+
+<Routes>
+  <RoutingRule name="ctxOriginId" value="1">
+    <Endpoint>https://cvm-dev2013-cms/CustomerSearch/1</Endpoint>
+  </RoutingRule>
+  <RoutingRule name="ctxOriginId" value="12">
+    <Endpoint>https://cvm-dev2013-cms/CustomerSearch%20UK%20Ltd/12</Endpoint>
+  </RoutingRule>
+   <RoutingRule name="ctxApplicationId" value="12">
+    <Endpoint>https://cvm-dev2013-cms/CustomerSearch%20UK%20Ltd/12</Endpoint>
+  </RoutingRule> 
+</Routes>
