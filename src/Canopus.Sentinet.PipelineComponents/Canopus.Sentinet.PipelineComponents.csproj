@@ -30,9 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Nevatech.Vsb.Repository, Version=4.9.603.0, Culture=neutral, PublicKeyToken=f35d905149dcb6c0, processorArchitecture=MSIL" />
+    <Reference Include="Nevatech.Vsb.Repository, Version=5.0.0.0, Culture=neutral, PublicKeyToken=f35d905149dcb6c0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Nevatech\Sentinet\Nevatech.Vsb.Repository.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClaimsToContextPropertyBag.cs" />
+    <Compile Include="MediaFormatter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryParametersToContextPropertyBag.cs" />
     <Compile Include="StopProcessFlowComponent.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
